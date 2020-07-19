@@ -33,13 +33,6 @@ class Helper():
 		self.api.messages.send(user_id = user_id, message = message, random_id = self.rand_int())
 
 
-	def event_from_chat(self, event):
-		'''Returns true if event from needed chat'''
-		if event.from_chat and event.chat_id == self.bot.chats[self.bot.active_chat]:
-			return True
-		return False
-
-
 	def check_modules(self):
 		'''Check activated modules'''
 		if self.modules['Birthday']:

@@ -1,2 +1,5 @@
 config.py
+.idea
 __pycache__
+Список дел
+modules/__pycache__
